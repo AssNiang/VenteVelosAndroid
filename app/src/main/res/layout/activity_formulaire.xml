@@ -9,7 +9,7 @@
             android:id="@+id/textHeader"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Veuillez compléter votre commande"
+            android:text="@string/titreFormulaire"
             android:textSize="18sp"
             android:textStyle="bold"
             android:gravity="center"
@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/textHeader"
             android:layout_marginTop="16dp"
-            android:hint="Prénom" />
+            android:hint="@string/hintPrenom" />
 
     <!-- Champ de saisie pour le nom -->
     <EditText
@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/editTextPrenom"
             android:layout_marginTop="16dp"
-            android:hint="Nom" />
+            android:hint="@string/hintNom" />
 
     <!-- Champ de saisie pour le téléphone -->
     <EditText
@@ -41,7 +41,7 @@
             android:layout_below="@id/editTextNom"
             android:layout_marginTop="16dp"
             android:inputType="phone"
-            android:hint="Téléphone" />
+            android:hint="@string/hintTelephone" />
 
     <!-- Champ de saisie pour l'email -->
     <EditText
@@ -51,7 +51,7 @@
             android:layout_below="@id/editTextTelephone"
             android:layout_marginTop="16dp"
             android:inputType="textEmailAddress"
-            android:hint="Email" />
+            android:hint="@string/hintEmail" />
 
     <!-- Champ de saisie pour l'adresse -->
     <EditText
@@ -60,7 +60,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/editTextEmail"
             android:layout_marginTop="16dp"
-            android:hint="Adresse" />
+            android:hint="@string/hintAdresse" />
 
     <!-- Champ de saisie pour la ville -->
     <EditText
@@ -69,7 +69,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/editTextAdresse"
             android:layout_marginTop="16dp"
-            android:hint="Ville" />
+            android:hint="@string/hintVille" />
 
     <!-- Champ de saisie pour l'état -->
     <EditText
@@ -78,7 +78,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/editTextVille"
             android:layout_marginTop="16dp"
-            android:hint="État" />
+            android:hint="@string/hintEtat" />
 
     <!-- Champ de saisie pour le code postal -->
     <EditText
@@ -88,7 +88,7 @@
             android:layout_below="@id/editTextEtat"
             android:layout_marginTop="16dp"
             android:inputType="number"
-            android:hint="Code Postal" />
+            android:hint="@string/hintCodePostal" />
 
     <!-- Ajoutez un LinearLayout pour centrer les boutons -->
     <LinearLayout
@@ -104,22 +104,19 @@
                 android:id="@+id/btnSoumettre"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/editTextCodePostal"
                 android:background="@color/blue"
                 android:layout_marginHorizontal="5dp"
                 android:padding="5dp"
-                android:text="Soumettre" />
+                android:text="@string/submitText" />
 
         <!-- Bouton Cancel -->
         <Button
                 android:id="@+id/btnCancel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBaseline="@id/btnSoumettre"
-                android:layout_toEndOf="@id/btnSoumettre"
                 android:background="@color/red"
                 android:padding="5dp"
-                android:text="Annuler" />
+                android:text="@string/cancelText" />
     </LinearLayout>
 
 </RelativeLayout>

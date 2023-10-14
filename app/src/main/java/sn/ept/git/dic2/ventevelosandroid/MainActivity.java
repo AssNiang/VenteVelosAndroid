@@ -1,29 +1,18 @@
 package sn.ept.git.dic2.ventevelosandroid;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
+import sn.ept.git.dic2.ventevelosandroid.adapters.ProduitAdapter;
 import sn.ept.git.dic2.ventevelosandroid.fragments.HomeFragment;
 import sn.ept.git.dic2.ventevelosandroid.fragments.ListeCategoriesFragment;
 import sn.ept.git.dic2.ventevelosandroid.fragments.ListeMarquesFragment;
 import sn.ept.git.dic2.ventevelosandroid.fragments.ListeProduitsFragment;
-import sn.ept.git.dic2.ventevelosandroid.methods.ProduitMethods;
-import sn.ept.git.dic2.ventevelosandroid.models.Produit;
-import sn.ept.git.dic2.ventevelosandroid.R;
-
-
-import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -39,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(navListener);
 
@@ -50,28 +38,28 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private BottomNavigationView.OnNavigationItemSelectedListener navListener =
-            new BottomNavigationView.OnNavigationItemSelectedListener() {
-                @Override
-                public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                    Fragment selectedFragment = null;
+        new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                Fragment selectedFragment = null;
 
-                    if (item.getItemId() == R.id.navigation_home) {
-                        selectedFragment = new HomeFragment();
-                    } else if (item.getItemId() == R.id.navigation_liste_produits) {
-                        selectedFragment = new ListeProduitsFragment();
-                    } else if (item.getItemId() == R.id.navigation_liste_categories) {
-                        selectedFragment = new ListeCategoriesFragment();
-                    } else if (item.getItemId() == R.id.navigation_liste_marques) {
-                        selectedFragment = new ListeMarquesFragment();
-                    }
-
-                    if (selectedFragment != null) {
-                        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                                selectedFragment).commit();
-                    }
-
-                    return true;
+                if (item.getItemId() == R.id.navigation_home) {
+                    selectedFragment = new HomeFragment();
+                } else if (item.getItemId() == R.id.navigation_liste_produits) {
+                    selectedFragment = new ListeProduitsFragment();
+                } else if (item.getItemId() == R.id.navigation_liste_categories) {
+                    selectedFragment = new ListeCategoriesFragment();
+                } else if (item.getItemId() == R.id.navigation_liste_marques) {
+                    selectedFragment = new ListeMarquesFragment();
                 }
-            };
+
+                if (selectedFragment != null) {
+                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                            selectedFragment).commit();
+                }
+
+                return true;
+            }
+        };
 
 }

@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-import sn.ept.git.dic2.ventevelosandroid.MarqueAdapter;
+import sn.ept.git.dic2.ventevelosandroid.adapters.MarqueAdapter;
 import sn.ept.git.dic2.ventevelosandroid.R;
 import sn.ept.git.dic2.ventevelosandroid.RetrofitClient;
 import sn.ept.git.dic2.ventevelosandroid.methods.MarqueMethods;

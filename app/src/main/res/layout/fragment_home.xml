@@ -3,6 +3,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-    <!-- Add UI elements for the Home tab -->
-
+    <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcomeMessage"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
 </RelativeLayout>
+

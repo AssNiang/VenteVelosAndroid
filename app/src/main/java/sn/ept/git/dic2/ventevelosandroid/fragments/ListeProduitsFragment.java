@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-import sn.ept.git.dic2.ventevelosandroid.ProduitAdapter;
+import sn.ept.git.dic2.ventevelosandroid.adapters.ProduitAdapter;
 import sn.ept.git.dic2.ventevelosandroid.R;
 import sn.ept.git.dic2.ventevelosandroid.RetrofitClient;
 import sn.ept.git.dic2.ventevelosandroid.methods.ProduitMethods;

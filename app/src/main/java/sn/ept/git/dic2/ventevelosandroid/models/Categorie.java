@@ -2,6 +2,7 @@ package sn.ept.git.dic2.ventevelosandroid.models;
 
 import java.io.Serializable;
 
+
 public class Categorie implements Serializable {
     Long id;
     String nom;

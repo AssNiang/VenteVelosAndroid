@@ -1,4 +1,4 @@
-package sn.ept.git.dic2.ventevelosandroid;
+package sn.ept.git.dic2.ventevelosandroid.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+import sn.ept.git.dic2.ventevelosandroid.R;
 import sn.ept.git.dic2.ventevelosandroid.models.Marque;
 
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package sn.ept.git.dic2.ventevelosandroid;
+package sn.ept.git.dic2.ventevelosandroid.adapters;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -14,6 +14,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+import sn.ept.git.dic2.ventevelosandroid.FormulaireActivity;
+import sn.ept.git.dic2.ventevelosandroid.R;
 import sn.ept.git.dic2.ventevelosandroid.models.Produit;
 
 import java.io.Serializable;

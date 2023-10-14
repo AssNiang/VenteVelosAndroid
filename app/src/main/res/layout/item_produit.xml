@@ -12,39 +12,39 @@
             android:id="@+id/numeroTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Numero"
+            android:text="@string/numeroProduitText"
             android:textStyle="bold" />
 
     <TextView
             android:id="@+id/nomTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Nom Produit"
+            android:text="@string/nomProduitText"
             android:textStyle="bold" />
 
     <TextView
             android:id="@+id/marqueTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Marque: " />
+            android:text="@string/marqueText" />
 
     <TextView
             android:id="@+id/categorieTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Catégorie: " />
+            android:text="@string/categorieText" />
 
     <TextView
             android:id="@+id/prixDepartTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Prix départ: " />
+            android:text="@string/prixDepartText" />
 
     <TextView
             android:id="@+id/anneeModelTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Année Modèle: " />
+            android:text="@string/anneeModeleText" />
 
     <!-- Order Button -->
     <Button
@@ -53,7 +53,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/white"
             android:layout_margin="2dp"
-            android:text="Commander"
+            android:text="@string/commanderText"
             android:background="@drawable/button_background" />
 
     <!-- Add more TextViews or other views to display other information about the product -->
